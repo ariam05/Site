@@ -60,7 +60,7 @@
             align-items: center;
             margin-bottom: 20px;
             padding-bottom: 12px;
-            border-bottom: 1px solid var(--grafana-border);
+            /* border-bottom: 1px solid var(--grafana-border); */
         }
         
         .dashboard-title {
@@ -839,8 +839,8 @@
                 <h1 class="profile-name">Ariam Mahray</h1>
                 <div class="profile-title">Site Reliability Engineer</div>
                 <div class="profile-bio">
-                    <p>Driven by a passion for software development and application support, I specialize in Python, Java, React, and AWS to create innovative, scalable solutions.
-                    I have gained hands-on experience in software development and data science, with a proven track record of optimizing applications and implementing secure architectures.</p>
+                    <p>Driven by a passion for software development and application support, I specialize in Python, Java, SQL, and Amazon Web Services (AWS) to create innovative, scalable solutions.
+                    I have gained hands-on experience in Software Development, Data Science, as well as as certificates in Site Reliability Engineering and Full Stack Software Development, with a proven track record of optimizing applications and implementing secure architectures.</p>
                     <p>I am eager to apply my technical experience, problem-solving abilities, and leadership skills to contribute meaningfully in a dynamic and fast-paced environment.</p>
                 </div>
             </div>
@@ -864,9 +864,10 @@
                             <div class="timeline-desc">Developed and maintained comprehensive Grafana dashboards to monitor API performance and Kubernetes cluster metrics, enabling
 proactive management of containerized workloads and reducing (MTTR) for production incidents</div>
                         <div class="project-tags-b">
+                            <span class="project-tag-b">Linux</span>
                             <span class="project-tag-b">Kubernetes</span>
-                            <span class="project-tag-b">Automation</span>
-                            <span class="project-tag-b">Terraform</span>
+                            <span class="project-tag-b">Jenkins</span>
+                            <span class="project-tag-b">Grafana</span>
                         </div>
                         </div>
                         
@@ -876,9 +877,10 @@ proactive management of containerized workloads and reducing (MTTR) for producti
                             <div class="timeline-desc">Implemented authentication services and serverless architecture using AWS (Cognito, Lambdas and S3) and Node.js to secure data,
 enhancing data security and cutting operational costs by 15%.</div>
                             <div class="project-tags-b">
-                                <span class="project-tag-b">Kubernetes</span>
-                                <span class="project-tag-b">Automation</span>
-                                <span class="project-tag-b">Terraform</span>
+                                <span class="project-tag-b">Python</span>
+                                <span class="project-tag-b">ReactJS</span>
+                                <span class="project-tag-b">React Native</span>
+                                <span class="project-tag-b">AWS</span>
                             </div>
                         </div>
                         
@@ -888,9 +890,9 @@ enhancing data security and cutting operational costs by 15%.</div>
                             <div class="timeline-desc">Conducted in-depth market research and comprehensive data analysis on 50+ companies using predictive modeling in SQL to identify
 investment opportunities, and communicated visualized business insights clearly to various levels of management and clients.</div>
                             <div class="project-tags-b">
-                                <span class="project-tag-b">Kubernetes</span>
-                                <span class="project-tag-b">Automation</span>
-                                <span class="project-tag-b">Terraform</span>
+                                <span class="project-tag-b">Python</span>
+                                <span class="project-tag-b">SQL </span>
+                                <span class="project-tag-b">Analysis</span>
                             </div>
                         </div>
                         <div class="timeline-item">
@@ -899,9 +901,9 @@ investment opportunities, and communicated visualized business insights clearly 
                             <div class="timeline-desc">Implemented automated testing processes using Python and Tableau to ensure the reliability and accuracy of new features on
 InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
                             <div class="project-tags-b">
-                                <span class="project-tag-b">Kubernetes</span>
-                                <span class="project-tag-b">Automation</span>
-                                <span class="project-tag-b">Terraform</span>
+                                <span class="project-tag-b">Python</span>
+                                <span class="project-tag-b">SQL</span>
+                                <span class="project-tag-b">AWS</span>
                             </div>
                         </div>
                         
@@ -914,7 +916,7 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
             <div class="stacked-panels">
                 
                 <!-- Stats Panel -->
-                <div class="panel" style="padding-bottom: 5%;">
+                <div class="panel"">
                     <div class="panel-header">
                         <div class="panel-title">
                             <i class="fas fa-chart-bar"></i>
@@ -942,7 +944,36 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
                         </div>
                     </div>
                 </div>
+                <!-- Education Panel -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <div class="panel-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            Education and Certifications
+                        </div>
+                    </div>
+                    <div class="panel-content">
+                        <div class="education-item">
+                            <div class="education-degree">University of California, Berkeley</div>
+                            <div class="education-school">B.A. Data Science, Minor Computer Science</div>
+                            <div class="education-date">MAY 2024</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-degree">Mthree Academy</div>
+                            <div class="education-school">Foundations of Site Reliability Eng. (SRE)</div>
+                            <div class="education-date">FEB 2025</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-degree">Coding Dojo Software Development Bootcamp</div>
+                            <div class="education-school">Full Stack Development in Python, Java, MERN </div>
+                            <div class="education-date">DEC 2021</div>
+                        </div>
+                        <button class="interactive-btn" onclick="window.open('https://drive.google.com/file/d/16F80TjL9vw689p7BMPLnUcKN1Hr-feJ7/view?usp=sharing', '_blank')"> 
+                            <i class="fas fa-download"></i> Download Resume
+                        </button>
+                    </div>
 
+                </div>
                 <!-- Graph Panel -->
                 <div class="panel">
                     <div class="panel-header">
@@ -951,7 +982,7 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
                             Performance Metrics
                         </div>
                     </div>
-                    <div class="panel-content" style="padding-bottom: 33px;">
+                    <div class="panel-content"">
                         <div class="graph-container">
                             <div class="graph-title">
                                 <span>SRE Skills & Performance Over Time</span>
@@ -984,36 +1015,7 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
                         </div>
                     </div>
                 </div>
-                <!-- Education Panel -->
-                <div class="panel">
-                    <div class="panel-header">
-                        <div class="panel-title">
-                            <i class="fas fa-graduation-cap"></i>
-                            Education and Certifications
-                        </div>
-                    </div>
-                    <div class="panel-content">
-                        <div class="education-item">
-                            <div class="education-degree">B.A. Data Science, Minor Computer Science</div>
-                            <div class="education-school">University of California, Berkeley</div>
-                            <div class="education-date">MAY 2024</div>
-                        </div>
-                        <div class="education-item">
-                            <div class="education-degree">Foundations of Site Reliability Engineering (SRE)</div>
-                            <div class="education-school">Mthree Academy</div>
-                            <div class="education-date">FEB 2025</div>
-                        </div>
-                        <div class="education-item">
-                            <div class="education-degree">Full Stack Development in Python, Java, MERN</div>
-                            <div class="education-school">Coding Dojo Software Development Bootcamp </div>
-                            <div class="education-date">DEC 2021</div>
-                        </div>
-                        <button class="interactive-btn" onclick="window.open('https://drive.google.com/file/d/16F80TjL9vw689p7BMPLnUcKN1Hr-feJ7/view?usp=sharing', '_blank')"> 
-                            <i class="fas fa-download"></i> Download Resume
-                        </button>
-                    </div>
 
-                </div>
             </div>
             
             <!-- Stacked Panels Group 2 - Technical Skills & Education -->
@@ -1102,7 +1104,9 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
                             <div class="skill-progress">
                                 <div class="skill-level" data-width="65%" style="background: var(--grafana-red);"></div>
                             </div>
+                            
                         </div>
+                        
                     </div>
                     
 
@@ -1144,7 +1148,7 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
                         
                         <div class="skill-bar">
                             <div class="skill-name">
-                                <span>Communication and Collaboration</span>
+                                <span>Collaboration</span>
                                 <span>100%</span>
                             </div>
                             <div class="skill-progress">
@@ -1187,15 +1191,27 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
                                 <div class="skill-level" data-width="100%" style="background: gray;"></div>
                             </div>
                         </div>
-
+                            <div class="skill-bar">
+                            <div class="skill-name">
+                                <span>Analytical</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-level" data-width="100%" style="background: var(--grafana-blue);"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 </div>
+
             </div>
             
 
             <!-- Stacked Panels Group 3 -->
             <div class="stacked-panels">
+
+
+
                 <!-- Projects Panel -->
                 <div class="panel">
                     <div class="panel-header">
@@ -1215,7 +1231,7 @@ concentration and cardiovascular disease indicators.</div>
                             <div class="project-tags">
                                 <span class="project-tag">Python</span>
                                 <span class="project-tag">Statistical Modeling</span>
-                                <span class="project-tag">Data Science & Analytics</span>
+                                <span class="project-tag">Data Science</span>
                                 <span class="project-tag">Data Visualization</span>
                                 <span class="project-tag">Matplotlib</span>
                             </div>
@@ -1277,10 +1293,7 @@ needs of over 14,000 UC Berkeley students to find their perfect study spots arou
                             <button class="carousel-nav carousel-next" onclick="scrollCarousel(300)">❯</button>
                         </div>
                     </div>
-                </div>
-
-
-
+                </div>     
                 <!-- Contact Panel -->
                 <div class="panel">
                     <div class="panel-header">
