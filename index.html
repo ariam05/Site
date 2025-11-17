@@ -399,13 +399,14 @@
             text-align: right;
             margin-top: 3%;
             text-decoration: none;
-            color: white;
+            color: var(--grafana-white);
             cursor: pointer;
             transition: color 0.3s ease;
+          
         }
 
         .project-link:hover {
-            color: var(--grafana-blue);
+            color: var(--grafana-orange);
         }
         
         .contact-item {
@@ -429,7 +430,7 @@
             width: 36px;
             height: 36px;
             border-radius: 50%;
-            background: var(--grafana-blue);
+            background: #0077B5;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -845,6 +846,7 @@
             </div>
         </div>
         
+
         <div class="dashboard-grid">
             <!-- Experience Panel -->
             <div class="panel">
@@ -910,6 +912,7 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
 
             <!-- Stacked Panels Group 1 - Career stats & Technical Projects --> 
             <div class="stacked-panels">
+                
                 <!-- Stats Panel -->
                 <div class="panel" style="padding-bottom: 5%;">
                     <div class="panel-header">
@@ -935,6 +938,47 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
                             <div class="stat-card">
                                 <div class="stat-value">2</div>
                                 <div class="stat-label">Certifications</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <!-- Graph Panel -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <div class="panel-title">
+                            <i class="fas fa-chart-line"></i>
+                            Performance Metrics
+                        </div>
+                    </div>
+                    <div class="panel-content" style="padding-bottom: 33px;">
+                        <div class="graph-container">
+                            <div class="graph-title">
+                                <span>SRE Skills & Performance Over Time</span>
+                                <span class="pulse" style="color: var(--grafana-green);">
+                                    <!-- <i class="fas fa-circle"></i> Live
+                                </span> -->
+                            </div>
+                            <div class="graph">
+                                <div class="graph-line">
+                                    <div class="graph-bar" style="height: 25%;"></div>
+                                    <div class="graph-bar" style="height: 50%;"></div>
+                                    <div class="graph-bar" style="height: 57%;"></div>
+                                    <div class="graph-bar" style="height: 68%;"></div>
+                                    <div class="graph-bar" style="height: 77%;"></div>
+                                    <div class="graph-bar" style="height: 86%;"></div>
+                                    <div class="graph-bar" style="height: 96%;"></div>
+                                    <div class="graph-bar" style="height: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="graph-labels">
+                                <span>Jan</span>
+                                <span>Feb</span>
+                                <span>Mar</span>
+                                <span>May</span>
+                                <span>Jul</span>
+                                <span>Sep</span>
+                                <span>Now</span>
+                                <!-- <span>Now</span> -->
                             </div>
                         </div>
                     </div>
@@ -985,72 +1029,81 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
                     <div class="panel-content" style="padding-bottom: 4%;">
                         <div class="skill-bar">
                             <div class="skill-name">
-                                <span>Kubernetes & Docker</span>
-                                <span>95%</span>
+                                <span>Linux and Bash Scripting</span>
+                                <!-- <span>95%</span> -->
                             </div>
                             <div class="skill-progress">
-                                <div class="skill-level" data-width="95%" style="background: var(--grafana-green);"></div>
+                                <div class="skill-level" data-width="85%" style="background: var(--grafana-blue);"></div>
                             </div>
                         </div>
                         
                         <div class="skill-bar">
                             <div class="skill-name">
-                                <span>AWS Cloud Services</span>
-                                <span>90%</span>
+                                <span>Incident Management and Troubleshooting</span>
+                                <!-- <span>90%</span> -->
                             </div>
                             <div class="skill-progress">
-                                <div class="skill-level" data-width="90%" style="background: var(--grafana-red);"></div>
+                                <div class="skill-level" data-width="55%" style="background: var(--grafana-green);"></div>
                             </div>
                         </div>
                         
                         <div class="skill-bar">
                             <div class="skill-name">
-                                <span>Python & Bash Scripting</span>
-                                <span>88%</span>
+                                <span>Monitoring & Observabillity</span>
+                                <!-- <span>88%</span> -->
                             </div>
                             <div class="skill-progress">
-                                <div class="skill-level" data-width="88%" style="background: var(--grafana-orange);"></div>
+                                <div class="skill-level" data-width="70%" style="background: var(--grafana-red);"></div>
                             </div>
                         </div>
                         
                         <div class="skill-bar">
                             <div class="skill-name">
-                                <span>Monitoring & Observability</span>
-                                <span>92%</span>
+                                <span>Kubernetes</span>
+                                <!-- <span>92%</span> -->
                             </div>
                             <div class="skill-progress">
-                                <div class="skill-level" data-width="92%" style="background: var(--grafana-purple);"></div>
+                                <div class="skill-level" data-width="60%" style="background: var(--grafana-orange);"></div>
                             </div>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-name">
-                                <span>Monitoring & Observability</span>
-                                <span>92%</span>
+                                <span>Amazon Web Services</span>
+                                <!-- <span>92%</span> -->
                             </div>
                             <div class="skill-progress">
-                                <div class="skill-level" data-width="92%" style="background: var(--grafana-blue);"></div>
+                                <div class="skill-level" data-width="70%" style="background: var(--grafana-purple);"></div>
                             </div>
                         </div>
-                                                <div class="skill-bar">
+                            <div class="skill-bar">
                             <div class="skill-name">
-                                <span>Monitoring & Observability</span>
-                                <span>92%</span>
+                                <span>Python</span>
+                                <!-- <span>92%</span> -->
                             </div>
                             <div class="skill-progress">
-                                <div class="skill-level" data-width="92%" style="background: var(--grafana-green);"></div>
+                                <div class="skill-level" data-width="85%" style="background: var(--grafana-blue);"></div>
                             </div>
                         </div>
-                                                <div class="skill-bar">
+                        <div class="skill-bar">
                             <div class="skill-name">
-                                <span>Monitoring & Observability</span>
-                                <span>92%</span>
+                                <span>Java</span>
+                                <!-- <span>92%</span> -->
                             </div>
                             <div class="skill-progress">
-                                <div class="skill-level" data-width="92%" style="background: var(--grafana-red);"></div>
+                                <div class="skill-level" data-width="45%" style="background: var(--grafana-green);"></div>
                             </div>
                         </div>
-                        
+                            <div class="skill-bar">
+                            <div class="skill-name">
+                                <span>SQL</span>
+                                <!-- <span>92%</span> -->
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-level" data-width="65%" style="background: var(--grafana-red);"></div>
+                            </div>
+                        </div>
                     </div>
+                    
 
                     
                     
@@ -1070,10 +1123,10 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
                         <div class="skill-bar">
                             <div class="skill-name">
                                 <span>Written and Verbal Communication</span>
-                                <span>95%</span>
+                                <span>100%</span>
                             </div>
                             <div class="skill-progress">
-                                <div class="skill-level" data-width="100%" style="background: var(--grafana-gray);"></div>
+                                <div class="skill-level" data-width="100%" style="background: gray;"></div>
                             </div>
                         </div>
                     
@@ -1081,7 +1134,7 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
                         <div class="skill-bar">
                             <div class="skill-name">
                                 <span>Automation and Efficiency Mindset</span>
-                                <span>88%</span>
+                                <span>100%</span>
                             </div>
                             <div class="skill-progress">
                                 <div class="skill-level" data-width="100%" style="background: var(--grafana-blue);"></div>
@@ -1091,16 +1144,16 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
                         <div class="skill-bar">
                             <div class="skill-name">
                                 <span>Communication and Collaboration</span>
-                                <span>92%</span>
+                                <span>100%</span>
                             </div>
                             <div class="skill-progress">
-                                <div class="skill-level" data-width="100%" style="background: var(--grafana-gray);"></div>
+                                <div class="skill-level" data-width="100%" style="background: gray;"></div>
                             </div>
                         </div>
                             <div class="skill-bar">
                             <div class="skill-name">
                                 <span>Reliability and Operations Focus</span>
-                                <span>92%</span>
+                                <span>100%</span>
                             </div>
                             <div class="skill-progress">
                                 <div class="skill-level" data-width="100%" style="background: var(--grafana-blue);"></div>
@@ -1109,16 +1162,16 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
                             <div class="skill-bar">
                             <div class="skill-name">
                                 <span>Attention to Detail</span>
-                                <span>92%</span>
+                                <span>100%</span>
                             </div>
                             <div class="skill-progress">
-                                <div class="skill-level" data-width="100%" style="background: var(--grafana-gray);"></div>
+                                <div class="skill-level" data-width="100%" style="background: gray;"></div>
                             </div>
                         </div>
                                                 <div class="skill-bar">
                             <div class="skill-name">
                                 <span>Problem-Solving & Critical Thinking</span>
-                                <span>90%</span>
+                                <span>100%</span>
                             </div>
                             <div class="skill-progress">
                                 <div class="skill-level" data-width="100%" style="background: var(--grafana-blue);"></div>
@@ -1127,57 +1180,17 @@ InstaHub's Logger IoT Dashboard, reducing manual testing time by 35%.</div>
                             <div class="skill-bar">
                             <div class="skill-name">
                                 <span>Adaptability and Continuous Learning</span>
-                                <span>92%</span>
+                                <span>100%</span>
                             </div>
                             <div class="skill-progress">
-                                <div class="skill-level" data-width="100%" style="background: var(--grafana-blue);"></div>
+                                <div class="skill-level" data-width="100%" style="background: gray;"></div>
                             </div>
                         </div>
 
                     </div>
                 </div>
                 </div>
-                <!-- Graph Panel -->
-                <div class="panel">
-                    <div class="panel-header">
-                        <div class="panel-title">
-                            <i class="fas fa-chart-line"></i>
-                            Performance Metrics
-                        </div>
-                    </div>
-                    <div class="panel-content" style="padding-bottom: 33px;">
-                        <div class="graph-container">
-                            <div class="graph-title">
-                                <span>System Reliability Over Time</span>
-                                <span class="pulse" style="color: var(--grafana-green);">
-                                    <i class="fas fa-circle"></i> Live
-                                </span>
-                            </div>
-                            <div class="graph">
-                                <div class="graph-line">
-                                    <div class="graph-bar" style="height: 70%;"></div>
-                                    <div class="graph-bar" style="height: 85%;"></div>
-                                    <div class="graph-bar" style="height: 80%;"></div>
-                                    <div class="graph-bar" style="height: 90%;"></div>
-                                    <div class="graph-bar" style="height: 95%;"></div>
-                                    <div class="graph-bar" style="height: 92%;"></div>
-                                    <div class="graph-bar" style="height: 98%;"></div>
-                                    <div class="graph-bar" style="height: 99%;"></div>
-                                </div>
-                            </div>
-                            <div class="graph-labels">
-                                <span>Jan</span>
-                                <span>Mar</span>
-                                <span>May</span>
-                                <span>Jul</span>
-                                <span>Sep</span>
-                                <span>Nov</span>
-                                <span>Jan</span>
-                                <span>Now</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
             
 
